@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b12">
+  <meta name="description" content="AVRENWIBUID — temukan dan jelajahi anime favoritmu.">
+  <title>AVRENWIBUID — Dunia Anime</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="AVRENWIBUID Beranda">AVREN<span>WIBUID</span></a>
+    <nav class="nav">
+      <a class="active" href="#beranda">Beranda</a>
+      <a href="#jelajahi">Jelajahi</a>
+      <a href="#terbaru">Anime Terbaru</a>
+    </nav>
+    <form class="search" id="searchForm">
+      <span aria-hidden="true">⌕</span>
+      <input id="searchInput" type="search" placeholder="Cari anime..." aria-label="Cari anime">
+      <button type="submit">Cari</button>
+    </form>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="live-dot"></span> TEMPAT NONTON ANIME FAVORITMU</p>
+        <h1>Temukan cerita<br><em>yang kamu suka.</em></h1>
+        <p class="hero-copy">Jelajahi dunia anime, temukan serial baru, dan ikuti episode favoritmu dalam satu tempat.</p>
+        <a class="primary-btn" href="#jelajahi">Jelajahi Anime <span>→</span></a>
+      </div>
+      <div class="hero-note"><span>AVRENWIBUID</span><span>ANIME • SERIES • MOVIES</span></div>
+    </section>
+
+    <section class="content-section" id="jelajahi">
+      <div class="section-heading">
+        <div><p class="eyebrow">PILIHAN UNTUKMU</p><h2>Jelajahi Anime</h2></div>
+        <span class="section-caption" id="resultCount">Koleksi anime</span>
+      </div>
+      <div class="filters">
+        <button class="filter-chip selected" data-filter="all">Semua</button>
+        <button class="filter-chip" data-filter="series">Serial</button>
+        <button class="filter-chip" data-filter="movie">Film</button>
+      </div>
+      <div id="status" class="status">Menyiapkan daftar anime...</div>
+      <div class="anime-grid" id="animeGrid" aria-live="polite"></div>
+      <button class="load-more" id="loadMore" hidden>Muat Lebih Banyak</button>
+    </section>
+
+    <section class="bottom-banner" id="terbaru">
+      <div><p class="eyebrow">SELALU ADA CERITA BARU</p><h2>Anime favoritmu,<br>lebih mudah ditemukan.</h2></div>
+      <a href="#jelajahi" class="secondary-btn">Lihat Koleksi <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#">AVREN<span>WIBUID</span></a><p>Jelajahi anime dengan nyaman.</p><small>© <span id="year"></span> AVRENWIBUID. Antarmuka demo.</small></footer>
+  <script src="script.js"></script>
+</body>
+</html>
